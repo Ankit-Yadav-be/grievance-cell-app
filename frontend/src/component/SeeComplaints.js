@@ -99,7 +99,7 @@ const SeeComplaints = ({ studentId }) => {
     const fetchComplaints = async () => {
       try {
         const response = await axios.post(
-          `http://localhost:8000/api/complaints/getcomplaint`,
+          `https://grievance-cell-app.onrender.com/api/complaints/getcomplaint`,
           { studentid: studentId },
           {
             headers: { "Content-Type": "application/json" },

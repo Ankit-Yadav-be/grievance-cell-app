@@ -34,7 +34,7 @@ const TeacherLogin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8000/api/teacher/login', {
+      const res = await axios.post('https://grievance-cell-app.onrender.com/api/teacher/login', {
         teacherid,
         password,
       });

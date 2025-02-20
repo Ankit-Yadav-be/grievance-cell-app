@@ -47,7 +47,7 @@ const ComplaintForTeacher = ({ complaintType }) => {
   const handleAction = async (id) => {
     try {
       const res = await axios.put(
-        "http://localhost:8000/api/complaints/updateaction",
+        "https://grievance-cell-app.onrender.com/api/complaints/updateaction",
         { _id: id },
         {
           headers: {
@@ -78,7 +78,7 @@ const ComplaintForTeacher = ({ complaintType }) => {
   const fetchComplaints = async () => {
     try {
       const response = await axios.post(
-        `http://localhost:8000/api/complaints/getallcomplaint`,
+        `https://grievance-cell-app.onrender.com/api/complaints/getallcomplaint`,
         { complainttype: complaintType },
         {
           headers: { "Content-Type": "application/json" },

@@ -38,7 +38,7 @@ const ComplaintForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/complaints/complaint",
+        "https://grievance-cell-app.onrender.com/api/complaints/complaint",
         {
           studentid,
           email,

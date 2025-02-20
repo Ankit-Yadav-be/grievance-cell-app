@@ -30,7 +30,7 @@ const AllTeacherList = () => {
   useEffect(() => {
     const fetchTeachers = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/api/teacher/allteacher");
+        const response = await axios.get("https://grievance-cell-app.onrender.com/api/teacher/allteacher");
         setTeachers(response.data);
       } catch (error) {
         console.error("Failed to fetch teachers", error);
@@ -46,7 +46,7 @@ const AllTeacherList = () => {
 
   const handleRemove = async (teacherid) => {
     try {
-      await axios.delete(`http://localhost:8000/api/teacher/delete/${teacherid}`, {
+      await axios.delete(`https://grievance-cell-app.onrender.com/api/teacher/delete/${teacherid}`, {
         headers: {
           "Content-Type": "application/json",
         },

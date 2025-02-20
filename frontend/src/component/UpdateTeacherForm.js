@@ -28,7 +28,7 @@ const UpdateTeacherForm = () => {
 
     try {
       const response = await axios.put(
-        "http://localhost:8000/api/teacher/update",
+        "https://grievance-cell-app.onrender.com/api/teacher/update",
         {
           teacherid,
           name,

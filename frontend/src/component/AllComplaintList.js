@@ -63,17 +63,17 @@ const AllComplaintsList = () => {
     try {
       let response;
       if (resolved) {
-        response = await axios.get("http://localhost:8000/api/complaints/resolved");
+        response = await axios.get("https://grievance-cell-app.onrender.com/api/complaints/resolved");
       } else if (unresolved) {
-        response = await axios.get("http://localhost:8000/api/complaints/unresolved");
+        response = await axios.get("https://grievance-cell-app.onrender.com/api/complaints/unresolved");
       } else if (type) {
         response = await axios.post(
-          `http://localhost:8000/api/complaints/getallcomplaint`,
+          `https://grievance-cell-app.onrender.com/api/complaints/getallcomplaint`,
           { complainttype: type },
           { headers: { "Content-Type": "application/json" } }
         );
       } else {
-        response = await axios.get(`http://localhost:8000/api/complaints/allcomplaintadmin`);
+        response = await axios.get(`https://grievance-cell-app.onrender.com/api/complaints/allcomplaintadmin`);
       }
       setComplaints(response.data.data || response.data); // Adjust based on API response structure
     } catch (err) {

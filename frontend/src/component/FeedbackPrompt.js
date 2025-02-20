@@ -22,7 +22,7 @@ const FeedbackPrompt = ({ complaint }) => {
     if (wantsToGiveFeedback) {
       try {
         const res = await axios.put(
-          "http://localhost:8000/api/complaints/updatestatus",
+          "https://grievance-cell-app.onrender.com/api/complaints/updatestatus",
           {
             _id: complaint._id,
           },

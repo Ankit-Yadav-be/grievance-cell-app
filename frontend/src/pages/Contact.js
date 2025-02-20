@@ -32,7 +32,7 @@ const ContactPage = () => {
     setLoading(true);
 
     try {
-     const res =  await axios.post('http://localhost:8000/api/contact/register', { name, studentId, message },{
+     const res =  await axios.post('https://grievance-cell-app.onrender.com/api/contact/register', { name, studentId, message },{
         headers:{
             "Content-Type" : "application/json"
         }

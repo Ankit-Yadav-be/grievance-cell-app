@@ -48,7 +48,7 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/api/student/register', {
+      await axios.post('https://grievance-cell-app.onrender.com/api/student/register', {
         name,
         studentid: studentId,
         password,

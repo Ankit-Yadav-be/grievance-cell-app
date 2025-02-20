@@ -48,7 +48,7 @@ const Login = ({ params }) => {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post('http://localhost:8000/api/student/login', {
+      const res = await axios.post('https://grievance-cell-app.onrender.com/api/student/login', {
         studentid: studentId,
         password,
       });

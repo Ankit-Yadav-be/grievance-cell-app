@@ -42,7 +42,7 @@ const TeacherSignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/api/teacher/register', {
+      await axios.post('https://grievance-cell-app.onrender.com/api/teacher/register', {
         name,
         teacherid: teacherId,
         department,

@@ -45,7 +45,7 @@ const FeedbackForm = ({ complaint }) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/register89",
+        "https://grievance-cell-app.onrender.com/register89",
         {
           studentid: studentId,
           feedbackdata: feedbackData,
@@ -60,7 +60,7 @@ const FeedbackForm = ({ complaint }) => {
       try {
         if (satisfied  == "true") {
           const res = await axios.put(
-            "http://localhost:8000/api/complaints/updatestatus",
+            "https://grievance-cell-app.onrender.com/api/complaints/updatestatus",
             {
               _id: complaint._id,
             },

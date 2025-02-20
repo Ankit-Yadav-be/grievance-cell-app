@@ -40,7 +40,7 @@ const EditComplaintModal = ({ isOpen, onClose, complaint }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:8000/api/complaints/update/${complaint._id}`, formData);
+      await axios.put(`https://grievance-cell-app.onrender.com/api/complaints/update/${complaint._id}`, formData);
       toast({
         title: "Complaint updated.",
         description: "Complaint updated successfully.",
